@@ -1,0 +1,46 @@
+:root {
+    font-size: 16px;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #374151;
+}
+
+div {
+    padding: 90px 220px;
+}
+
+h1 {
+    font-size: 2.375rem;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: bolder;
+    padding: 15px 45px;
+    border-radius: 100px;
+    border: 1px solid #f0f9ff;
+    color: #fff;
+}
+
+* {
+    border: 1px solid #000;
+}
