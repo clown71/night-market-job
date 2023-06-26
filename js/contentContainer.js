@@ -32,7 +32,7 @@ document.addEventListener('click', function(event) {
 //*頁面切換
 // 初始切換到頁面1
 window.onload = function() {
-  switchPage('page5');  // TODO:優先顯示頁面
+  switchPage('page1');  // TODO:優先顯示頁面
 }
 // 頁面切換函數
 function switchPage(pageId) {
