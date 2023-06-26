@@ -1,3 +1,4 @@
+//*語言列表
 // 获取菜单按钮和菜单元素
 const menuButton = document.querySelector('.language-menu-button');
 const menu = document.querySelector('.language-menu');
@@ -26,4 +27,43 @@ document.addEventListener('click', function(event) {
     // 如果点击事件的目标不是菜单按钮和菜单元素，则关闭菜单
     menu.classList.remove('open');
   }
+});
+
+//*頁面切換
+// 初始切換到頁面1
+window.onload = function() {
+  switchPage('page5');  // TODO:優先顯示頁面
+}
+// 頁面切換函數
+function switchPage(pageId) {
+  // 隱藏所有頁面
+  var pages = document.querySelectorAll('.page');
+  for (var i = 0; i < pages.length; i++) {
+    pages[i].style.display = 'none';
+  } 
+  
+  // 顯示選中的頁面
+  var selectedPage = document.getElementById(pageId);
+  selectedPage.style.display = 'block';
+}
+
+// 監聽選項點擊事件
+document.getElementById('option1').addEventListener('click', function() {
+  switchPage('page1'); // 切換到頁面1
+});
+
+document.getElementById('option2').addEventListener('click', function() {
+  switchPage('page2'); // 切換到頁面2
+});
+
+document.getElementById('option3').addEventListener('click', function() {
+  switchPage('page3'); // 切換到頁面3
+});
+
+document.getElementById('option4').addEventListener('click', function() {
+  switchPage('page4'); // 切換到頁面4
+});
+
+document.getElementById('option5').addEventListener('click', function() {
+  switchPage('page5'); // 切換到頁面5
 });
