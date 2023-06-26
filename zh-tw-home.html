@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>廣州街夜市 BB槍/射飛鏢 (zh-tw)</title>
+    <link rel="stylesheet" href="css\reset.css">
     <link rel="stylesheet" href="css\style-home.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -13,11 +14,14 @@
     <div class="logo"><a href="index.html">神射手</a></div>
     <nav class="navbar">
       <ul>
-        <li class="header-link"><a href="#">遊戲玩法</a></li>          
-        <li class="header-link"><a href="#">獎品兌換</a></li>
-        <li class="header-link"><a href="#">安全須知</a></li>
-        <!--! <li class="header-link"><a href="#">教學</a></li> -->
-        <!--! <li class="header-link"><a href="#">累計點數</a></li> -->
+        <li id="option1" class="header-link"><a href="#">遊戲種類</a></li>
+        <li id="option2" class="header-link"><a href="#">兌換獎品</a></li>
+        <li id="option3" class="header-link"><a href="#">玩法教學</a></li>
+        <li id="option4" class="header-link"><a href="#">安全須知</a></li>
+        <li id="option5" class="header-link"><a href="#">地圖位置</a></li>
+        <!--! <li id="option6" class="header-link"><a href="#">累計點數</a></li> -->
+        <!--! <li id="option7" class="header-link"><a href="#">常見問題</a></li> -->
+        <!--! <li id="option8" class="header-link"><a href="#">活動優惠</a></li> -->
         <li class="header-link language-menu-button">
           <a><i class="material-icons">translate</i></a>  <!--TODO: 右側內容彈窗-->
           <div class="language-menu">
@@ -36,28 +40,125 @@
   <script src="js/contentContainer.js"></script>  <!--TODO: js-->
   </header>
   <section>
-    <h2>空氣槍</h2>
-    <div class="price-container">
-      <p>兩種計分方式: 滿靶 & 累積
-        <br>每局10發子彈
-      </p>
-      <h5>滿靶</h5>
-      <div class="description-container">
-        <img src="images\價目表-10.jpg" alt="#">  <!--TODO: 圖片-->
-        <p>1局100元 (10顆BB彈)<br><br>射圓圈<br><br>10發全中</p>
+    <div id="page1" class="page">
+      <h2>空氣槍</h2>
+      <div class="price-container">
+        <p>兩種計分方式: 滿靶 & 累積
+          <br>每局10發子彈
+        </p>
+        <h5>滿靶</h5>
+        <div class="description-container">
+          <img src="images\價目表-10.jpg" alt="#">  <!--TODO: 圖片-->
+          <p>1局100元 (10顆BB彈)<br><br>射圓圈<br><br>10發全中</p>
+        </div>
+        <h5>累積</h5>
+        <div class="description-container">
+          <img src="images\價目表-30.jpg" alt="#">  <!--TODO: 圖片-->
+          <p>3局200元 (30顆BB彈)<br><br>射整塊板<br><br>累計擊破球數</p>
+        </div>
       </div>
-      <h5>累積</h5>
-      <div class="description-container">
-        <img src="images\價目表-30.jpg" alt="#">  <!--TODO: 圖片-->
-        <p>3局200元 (30顆BB彈)<br><br>射整塊板<br><br>累計擊破球數</p>
+      <h2>飛鏢</h2>
+      <div class="price-container">
+        <h5>累積</h5>
+        <div class="description-container">
+          <img src="images\價目表-30.jpg" alt="#">  <!--TODO: 圖片-->
+          <p>1局50元 (10支飛鏢)<br><br>3局100元 (30支飛鏢)<br><br>射整塊板<br><br>累計擊破球數</p>
+        </div>
       </div>
     </div>
-    <h2>飛鏢</h2>
-    <div class="price-container">
-      <h5>累積</h5>
-      <div class="description-container">
-        <img src="images\價目表-30.jpg" alt="#">  <!--TODO: 圖片-->
-        <p>1局50元 (10支飛鏢)<br><br>3局100元 (30支飛鏢)<br><br>射整塊板<br><br>累計擊破球數</p>
+    <div id="page2" class="page">
+      <h2>兌換獎品</h2>
+      <div class="price-container">
+        <div class="description-container">
+          <div><p>滿200元</p><br><img src="" alt="#"></div>
+          <div><p>玩就送</p><br><img src="" alt="#"></div>
+        </div>
+      </div>
+      <div class="price-container">
+        <div class="description-container">
+          <h3>空氣槍</h3>
+          <table>
+            <thead>
+              <tr><th>滿把</th><th>累積</th><th>兌換區塊</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1 次</td><td>30顆</td><td>桌面(■區塊)</td></tr>
+              <tr><td>2 次</td><td>60顆</td><td>桌面(■區塊)</td></tr>
+              <tr><td>3 次</td><td>90顆</td><td>桌面(■區塊)</td></tr>
+              <tr><td>5 次</td><td>120顆</td><td>桌面(■區塊)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="description-container">
+          <h3>飛鏢</h3>
+          <table>
+            <thead>
+              <tr><th>累積</th><th>兌換區塊</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>30顆</td><td>桌面(■區塊)</td></tr>
+              <tr><td>60顆</td><td>桌面(■區塊)</td></tr>
+              <tr><td>90顆</td><td>桌面(■區塊)</td></tr>
+              <tr><td>120顆</td><td>桌面(■區塊)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      <img src="" alt="#">
+      </div>
+    </div>
+    <div id="page3" class="page">
+      <h2>空氣槍教學</h2>
+      <div class="price-container">
+        <p>瞄準:以單眼看相覘孔(尾部黑色凹槽)與準心(前端銀色凸起)對齊，成一直線瞄向氣球</p>
+        <p>射擊:扣動板機(轉角處弧形條狀物)一次按到底<br>
+          ；力氣小請每次射擊前先壓下擊錘(覘孔後方圓形禿出物)<br>
+          射擊後請將板機放開(按住不放子彈會被擋在彈夾下方)</p>
+      </div>
+      <h2>飛鏢教學</h2>
+      <div class="price-container">
+        <p>拿法:以2或3隻手指輕握飛鏢前端鐵質處</p>
+        <p>瞄準:能丟在板子上就好</p>
+      </div>
+    </div>
+    <div id="page4" class="page">
+      <h2>安全須知</h2>
+      <div class="price-container">
+        <p>空氣槍請對氣球射擊，並遵守以下條規。<br>
+          1.請勿將槍口對準自己、家人、路人、仇人。<br>
+          2.請勿射擊遠方目標。<br>
+          3.請勿射擊老闆、桌面、地面、手腳、獎品。<br>
+          4.請勿用槍敲擊桌面、槍、人。<br>
+          5.請勿將槍貼在臉上。<br>
+          6.請勿丟槍、甩槍、轉槍。<br>
+          7.請勿將手指或異物塞入槍口。<br>
+          8.射擊時將槍舉起離開桌面，避免氣管堵塞。<br>
+          9.無法射擊請跟老闆說。<br>
+          10.如有子彈缺漏情形，以顯場老闆評定為準。<br>
+          11.沒有年齡限制皆可遊玩，幼兒須有家長陪同操作，並時刻注意安全。<br>
+        </p>
+      </div>
+    </div>
+    <div id="page5" class="page">
+      <h2>位置圖</h2>
+      <div class="price-container">
+        <img src="images\地圖.png" alt="#">
+        <div class="description-container">
+          <div>
+            <p>■ 攤位</p>
+            <p>■ 機車格</p>
+          </div>
+          <div>
+            <p>■ 廁所</p>
+            <p>■ 龍山寺</p>
+          </div>
+          <div>
+            <p>■ 廟</p>
+            <p>■ AED</p>
+          </div>
+          <div>
+            <p>■ 全聯</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
